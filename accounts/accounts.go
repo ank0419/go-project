@@ -16,7 +16,7 @@ func NewAccount(owner string) *Account{
 
 //balance ++ 증가 /-- 감소
 //Deposit x amount onyour account
-func (a Account) Deposit(amount int) {
+func (a *Account) Deposit(amount int) {
 	a.balance += amount
 }
 

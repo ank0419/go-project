@@ -10,5 +10,5 @@ func main() {
 	account := accounts.NewAccount("ahk0419")
 	account.Deposit(10)
 
-	fmt.Println(account)
+	fmt.Println(account.Balance())
 }

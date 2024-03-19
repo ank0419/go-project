@@ -5,6 +5,7 @@ import (
 	"log"
 
 	"github.com/ahk0419/go-project/accounts"
+	"github.com/ahk0419/go-project/mydict"
 )
 
 func main() {
@@ -18,6 +19,6 @@ func main() {
 	}
 	fmt.Println(account.Balance(), account.Owner())
 
-	dictionary := dic
-
+	dictionary := mydict.Dictionary{"first": "First word"}
+	dictionary.Search("second")
 }

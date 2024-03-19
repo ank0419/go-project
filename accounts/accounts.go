@@ -24,3 +24,7 @@ func (a *Account) Deposit(amount int) {
 func (a Account) Balance() int {
 	return a.balance
 }
+
+func (a *Account) Withdraw(amount int) {
+	a.balance -= amount
+}
